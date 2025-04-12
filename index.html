@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЭлитДом | Премиальная недвижимость</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <i class="fas fa-home"></i>
+          <h1>Элит<span>Дом</span></h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#main">Главная</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#properties">Объекты</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+        <div class="theme-toggle">
+          <i class="fas fa-sun"></i>
+          <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider round"></span>
+          </label>
+          <i class="fas fa-moon"></i>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Найдите дом своей мечты</h1>
+        <p>Мы помогаем клиентам найти и приобрести идеальную недвижимость уже более 15 лет. Наши эксперты сделают процесс покупки максимально комфортным.</p>
+        <div class="cta-buttons">
+          <a href="#properties" class="btn primary">Смотреть объекты</a>
+          <a href="#contact" class="btn secondary">Связаться с нами</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="search" class="container">
+    <div class="search-box">
+      <h2>Поиск недвижимости</h2>
+      <form class="search-form">
+        <div class="form-group">
+          <label for="property-type">Тип недвижимости</label>
+          <select id="property-type">
+            <option value="">Выберите тип</option>
+            <option value="apartment">Квартира</option>
+            <option value="house">Дом</option>
+            <option value="villa">Вилла</option>
+            <option value="commercial">Коммерческая</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="location">Расположение</label>
+          <select id="location">
+            <option value="">Выберите район</option>
+            <option value="center">Центр</option>
+            <option value="north">Север</option>
+            <option value="south">Юг</option>
+            <option value="east">Восток</option>
+            <option value="west">Запад</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="price">Бюджет</label>
+          <select id="price">
+            <option value="">Выберите бюджет</option>
+            <option value="budget1">До 5 млн ₽</option>
+            <option value="budget2">5-10 млн ₽</option>
+            <option value="budget3">10-20 млн ₽</option>
+            <option value="budget4">Более 20 млн ₽</option>
+          </select>
+        </div>
+        <button type="submit" class="btn primary">Искать</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="services" class="container">
+    <div class="section-header">
+      <h2>Наши услуги</h2>
+      <p>Полный спектр услуг в сфере недвижимости</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-building"></i>
+        <h3>Продажа недвижимости</h3>
+        <p>Профессиональная помощь в продаже вашей недвижимости по максимально выгодной цене</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-search"></i>
+        <h3>Подбор недвижимости</h3>
+        <p>Индивидуальный подбор объектов недвижимости под ваши требования и бюджет</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-key"></i>
+        <h3>Аренда недвижимости</h3>
+        <p>Помощь в аренде жилых и коммерческих помещений с полным юридическим сопровождением</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-file-contract"></i>
+        <h3>Юридическое сопровождение</h3>
+        <p>Полное юридическое сопровождение сделок с недвижимостью, проверка документов</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="properties" class="container">
+    <div class="section-header">
+      <h2>Премиальные объекты</h2>
+      <p>Лучшие предложения на рынке недвижимости</p>
+    </div>
+    <div class="properties-grid">
+      <div class="property-card">
+        <div class="property-image">
+          <span class="property-label">Продажа</span>
+          <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=350&q=80" alt="Современные апартаменты">
+        </div>
+        <div class="property-details">
+          <h3>Современные апартаменты</h3>
+          <p class="property-address"><i class="fas fa-map-marker-alt"></i> Центральный район, ул. Ленина 15</p>
+          <div class="property-features">
+            <span><i class="fas fa-vector-square"></i> 120 м²</span>
+            <span><i class="fas fa-bed"></i> 3 спальни</span>
+            <span><i class="fas fa-bath"></i> 2 ванные</span>
+          </div>
+          <div class="property-footer">
+            <span class="property-price">15.5 млн ₽</span>
+            <a href="#" class="btn small">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="property-card">
+        <div class="property-image">
+          <span class="property-label">Продажа</span>
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=350&q=80" alt="Загородный дом">
+        </div>
+        <div class="property-details">
+          <h3>Загородный дом с участком</h3>
+          <p class="property-address"><i class="fas fa-map-marker-alt"></i> Загородный район, Сосновый бор</p>
+          <div class="property-features">
+            <span><i class="fas fa-vector-square"></i> 250 м²</span>
+            <span><i class="fas fa-bed"></i> 4 спальни</span>
+            <span><i class="fas fa-bath"></i> 3 ванные</span>
+          </div>
+          <div class="property-footer">
+            <span class="property-price">28.7 млн ₽</span>
+            <a href="#" class="btn small">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="property-card">
+        <div class="property-image">
+          <span class="property-label">Продажа</span>
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=350&q=80" alt="Пентхаус">
+        </div>
+        <div class="property-details">
+          <h3>Пентхаус с панорамным видом</h3>
+          <p class="property-address"><i class="fas fa-map-marker-alt"></i> Центр, Набережная реки 25</p>
+          <div class="property-features">
+            <span><i class="fas fa-vector-square"></i> 180 м²</span>
+            <span><i class="fas fa-bed"></i> 3 спальни</span>
+            <span><i class="fas fa-bath"></i> 2 ванные</span>
+          </div>
+          <div class="property-footer">
+            <span class="property-price">42.9 млн ₽</span>
+            <a href="#" class="btn small">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="view-all">
+      <a href="#" class="btn primary">Смотреть все объекты</a>
+    </div>
+  </section>
+
+  <section id="testimonials" class="container">
+    <div class="section-header">
+      <h2>Отзывы клиентов</h2>
+      <p>Что говорят о нас наши клиенты</p>
+    </div>
+    <div class="testimonials-slider">
+      <div class="testimonial-card active">
+        <div class="testimonial-content">
+          <p>"Благодаря ЭлитДом нашли идеальную квартиру в центре города. Сотрудники компании отнеслись к нам с большим вниманием и профессионализмом. Сделка прошла быстро и без проблем."</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Анна Иванова">
+          <div>
+            <h4>Анна Иванова</h4>
+            <p>Покупатель квартиры</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"Обратился в компанию для продажи дома. Был приятно удивлен скоростью работы и профессионализмом. Продали через месяц по хорошей цене. Отличный сервис!"</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Сергей Петров">
+          <div>
+            <h4>Сергей Петров</h4>
+            <p>Продавец дома</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"Юридическое сопровождение от ЭлитДом помогло избежать множества проблем при покупке недвижимости. Благодарна команде за профессионализм и внимание к деталям."</p>
+        </div>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Елена Смирнова">
+          <div>
+            <h4>Елена Смирнова</h4>
+            <p>Инвестор в недвижимость</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-controls">
+        <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <div class="testimonial-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <div class="about-content">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=800&q=80" alt="Наша команда">
+      </div>
+      <div class="about-text">
+        <div class="section-header left-align">
+          <h2>О компании ЭлитДом</h2>
+          <p>15 лет безупречной репутации на рынке недвижимости</p>
+        </div>
+        <p>Компания ЭлитДом основана в 2008 году и за это время выросла в одного из лидеров рынка элитной недвижимости.</p>
+        <p>Наша миссия — помогать клиентам находить идеальные варианты недвижимости, полностью соответствующие их потребностям и бюджету.</p>
+        <ul class="about-features">
+          <li><i class="fas fa-check"></i> Более 1000 успешных сделок</li>
+          <li><i class="fas fa-check"></i> Команда сертифицированных специалистов</li>
+          <li><i class="fas fa-check"></i> Полное юридическое сопровождение</li>
+          <li><i class="fas fa-check"></i> Индивидуальный подход к каждому клиенту</li>
+        </ul>
+        <a href="#contact" class="btn primary">Связаться с нами</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="section-header left-align">
+            <h2>Контактная информация</h2>
+            <p>Свяжитесь с нами любым удобным способом</p>
+          </div>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Адрес</h4>
+                <p>г. Москва, ул. Тверская, 15, офис 204</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Телефон</h4>
+                <p>+7 (495) 123-45-67</p>
+                <p>+7 (905) 123-45-67</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>info@elitdom.ru</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>Время работы</h4>
+                <p>Пн-Пт: 9:00 - 20:00</p>
+                <p>Сб: 10:00 - 18:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <h3>Оставьте заявку</h3>
+          <p>Мы свяжемся с вами в ближайшее время</p>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" placeholder="Иван Иванов" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="example@mail.ru">
+            </div>
+            <div class="form-group">
+              <label for="service-select">Услуга</label>
+              <select id="service-select">
+                <option value="">Выберите услугу</option>
+                <option value="buy">Покупка недвижимости</option>
+                <option value="sell">Продажа недвижимости</option>
+                <option value="rent">Аренда недвижимости</option>
+                <option value="legal">Юридическая консультация</option>
+                <option value="other">Другое</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Сообщение</label>
+              <textarea id="message" placeholder="Ваше сообщение..." rows="4"></textarea>
+            </div>
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="privacy" required>
+              <label for="privacy">Я согласен на обработку персональных данных</label>
+            </div>
+            <button type="submit" class="btn primary">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <i class="fas fa-home"></i>
+          <h3>Элит<span>Дом</span></h3>
+          <p>Найдите дом своей мечты вместе с нами</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Компания</h4>
+            <ul>
+              <li><a href="#main">Главная</a></li>
+              <li><a href="#about">О нас</a></li>
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="#properties">Объекты</a></li>
+              <li><a href="#contact">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Услуги</h4>
+            <ul>
+              <li><a href="#">Продажа недвижимости</a></li>
+              <li><a href="#">Покупка недвижимости</a></li>
+              <li><a href="#">Аренда недвижимости</a></li>
+              <li><a href="#">Юридические услуги</a></li>
+              <li><a href="#">Оценка недвижимости</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Контакты</h4>
+            <ul class="contact-list">
+              <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Тверская, 15</li>
+              <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+              <li><i class="fas fa-envelope"></i> info@elitdom.ru</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 ЭлитДом. Все права защищены.</p>
+        <div class="footer-legal">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Условия использования</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
